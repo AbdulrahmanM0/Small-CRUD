@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+
+.banar{
+    background-image: url('/img/lo-fi-room-zfyt6cxq09og7sye.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding: 10%;
+}
+
+/* start note */
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    margin: 5%;
+    overflow-y: auto;
+}
+
+.note .note-head{
+    background-color: blueviolet;
+    padding: 20px 20px;
+    display: flex;
+}
+.note .note-head input{
+    border: 0;
+    outline: 0;
+    border-radius: 1px;
+    height: 30px;
+    width: 200px;
+}
+.note .note-head button{
+    border: 0;
+    height: 30px;
+    width: 80px;
+    border: 2px solid gray;
+}
+.note .note-body{
+    background-color: cyan;
+
+}
+.note .note-body ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-bottom:2px solid gray ;
+    width: 300px;
+}
+.note .note-body ul li textarea{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    resize: none;
+    overflow-y: auto;
+}
+.note .note-body ul li span{
+    display: flex;
+}
+.note .note-body ul li button{
+    border: 2px solid gray;
+    padding: 5px;
+    margin-left: 3px;
+    border-radius: 2px;
+}
+
+
+/* end note */
+@media (max-width:767px) {
+    .banar{
+        padding: 10px;
+    }
+    .container{
+        margin: 5px;
+        padding: 5px;
+    }
+    .note .note-head{
+        padding: 10px;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="root">
+        <div class="banar">
+            <div class="container">
+                <div class="note">
+                    <div class="note-head">
+                        <input id='input' type="text">
+                        <button id="add" onclick="createNote()">Add</button>
+                        <button id="update" onclick="updateNote()" style="display: none;">update</button>
+                    </div>
+                    <div class="note-body">
+                        <ul id='note-list'>
+                            <li><p>play games</p><span><button>update</button><button>delete</button></span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <audio src=""></audio>
+    </div>
+
+
+    <script src="main/main.js"></script>
+</body>
+</html>
